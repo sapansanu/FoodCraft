@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "sfsu.csc413.foodcraft"
+        minSdkVersion 21
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    jcenter()
+    mavenCentral()
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //This is a mirrored Volley Library that allows us to use Volley without having to GitClone and import it every time
+    //  I like it because it cleans up our file structure. - PK
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.android.support:design:23.0.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    compile 'com.google.zxing:core:3.2.0'
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile 'com.android.support:cardview-v7:23.+'
+    compile 'com.android.support:palette-v7:23.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'org.scribe:scribe:1.3.7'
+    compile 'com.beust:jcommander:1.48'
+    compile('com.googlecode.json-simple:json-simple:1.1.1'){ exclude group: 'org.hamcrest', module: 'hamcrest-core' }
+}

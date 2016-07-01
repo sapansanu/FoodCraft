@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#FFFFFF</color>
+  <color name="primary_dark">#6C7F91</color>
+  <color name="accent">#6C7F91</color>
+  <color name="light_green">#7ABA34</color>
+  <color name="dark_green">#5B852D</color>
+  <color name="ColorPrimary">#A62128</color>
+  <color name="ColorPrimaryDark">#E64A19</color>
+  <color name="black_50_opacity">#80000000</color>
+  <color name="black">#000000</color>
+
+  <color name="photo_tint">#7f101010</color>
+
+  <color name="theme_accent_1">#00BCD4</color>
+
+  <color name="list_dropdown_foreground_normal">#FFF</color>
+
+</resources>
